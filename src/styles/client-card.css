@@ -1,0 +1,33 @@
+#client-card {
+  gap: 1rem;
+
+  align-items: center;
+}
+
+.avatar-container {
+  display: flex;
+
+  width: 4rem;
+  height: 4rem;
+
+  padding: 3px;
+
+  border-radius: 0.625rem;
+  background: var(--gradient);
+
+  overflow: hidden;
+}
+
+#client-card .avatar {
+  flex: 1;
+
+  border-radius: 0.625rem;
+  border: 3px solid var(--white);
+
+  background-image: url(https://avatars.githubusercontent.com/u/19919319?v=4);
+  background-size: cover;
+}
+
+.client-info span {
+  font-size: var(--fs-xs);
+}

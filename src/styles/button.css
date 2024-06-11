@@ -1,0 +1,23 @@
+.button {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  padding: 0.5rem;
+
+  border-radius: 0.5rem;
+  background-color: var(--gray-700);
+
+  cursor: pointer;
+
+  border: none;
+}
+
+.button i {
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.button:disabled {
+  background-color: var(--gray-400);
+  cursor: not-allowed;
+}

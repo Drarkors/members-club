@@ -9,13 +9,51 @@
 
     <link rel="icon" href="./src/assets/logo.svg" />
 
-    <title>Document</title>
+    <title>Members Club</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="./src/assets/logo.svg" alt="Members Club" class="logo" />
+      <form>
+        <div class="input">
+          <input
+            type="text"
+            placeholder="ID do cartão"
+            id="id-card"
+            autocomplete="off"
+          />
+          <button class="button" type="submit" title="Confirmar">
+            <i class="ph ph-arrow-elbow-down-left"></i>
+          </button>
+        </div>
+      </form>
+    </header>
+
+    <main>
+      <section id="client-card">
+        <div class="avatar-container">
+          <div alt="Nome usuário" class="avatar"></div>
+        </div>
+        <div class="client-info">
+          <h2>Rafael Zanetti</h2>
+          <span>Cliente desde: 20/12/2020</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Input example -->
+    <!-- <div class="input">
+      <input type="text" placeholder="Placeholder for input" />
+      <button class="button">
+        <i class="ph ph-arrow-elbow-down-left"></i>
+      </button>
+    </div> -->
+  </body>
 </html>

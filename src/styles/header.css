@@ -1,0 +1,12 @@
+.logo {
+  height: 3rem;
+  object-fit: contain;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1rem;
+}

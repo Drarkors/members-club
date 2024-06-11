@@ -39,18 +39,18 @@
   --fw-base: 400;
   --fw-bold: 800;
 
-  --font-text-sm: var(--fs-xs) / 1.4 var(--ff-sans) var(--fw-base);
-  --font-text-sm: var(--fs-sm) / 1.4 var(--ff-sans) var(--fw-base);
-  --font-text-base: var(--fs-base) / 1.4 var(--ff-sans) var(--fw-base);
+  --font-text-sm: var(--fs-xs) / 1.4 var(--fw-base) var(--ff-sans);
+  --font-text-sm: var(--fs-sm) / 1.4 var(--fw-base) var(--ff-sans);
+  --font-text-base: var(--fs-base) / 1.4 var(--fw-base) var(--ff-sans);
 
-  --font-subtitle-sm: var(--fs-xs) / 1.4 var(--ff-sans) var(--fw-bold) uppercase;
-  --font-subtitle-base: var(--fs-sm) / 1.4 var(--ff-sans) var(--fw-bold)
-    uppercase;
+  --font-subtitle-sm: var(--fs-xs) / 1.4 var(--fw-bold) uppercase var(--ff-sans);
+  --font-subtitle-base: var(--fs-sm) / 1.4 var(--fw-bold) uppercase
+    var(--ff-sans);
 
-  --font-title-base: var(--fs-md) / 1.4 var(--ff-sans) var(--fw-base)
-    var(--fw-bold);
-  --font-title-md: var(--fs-xl) / 1.4 var(--ff-sans) var(--fw-base)
-    var(--fw-bold);
+  --font-title-base: var(--fs-md) / 1.4 var(--fw-base) var(--fw-bold)
+    var(--ff-sans);
+  --font-title-md: var(--fs-xl) / 1.4 var(--fw-base) var(--fw-bold)
+    var(--ff-sans);
 
   --fs-xs: 0.75rem;
   --fs-sm: 0.875rem;
@@ -60,32 +60,41 @@
   --fs-xl: 1.5rem;
   --fs-2xl: 2.5rem;
 
-  --py-base: 1rem;
-  --py-lg: 1.5rem;
-  --py-xl: 3rem;
-  --px-lg: 1.5rem;
+  --pd-base: 1rem;
 }
 
 html {
-  font: var(--font-text-base);
   color: var(--gray-500);
+  caret-color: var(--pink);
 }
 
 body {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
   background-color: var(--gray-200);
+
+  font-family: var(--ff-sans);
+  font-size: var(--fs-base) / 1.4;
+  font-weight: var(--fw-base);
 }
 
 h1 {
-  font: var(--font-title-base);
+  font-family: var(--ff-sans);
+  font-size: var(--fs-xl) / 1.4;
+  font-weight: var(--fw-bold);
   color: var(--gray-600);
 }
 
 h2 {
-  font: var(--font-subtitle-base);
-}
-
-h3 {
-  font: var(--font-subtitle-sm);
+  font-family: var(--ff-sans);
+  font-size: var(--fs-md) / 1.4;
+  font-weight: var(--fw-bold);
+  color: var(--gray-600);
 }
 
 ul[role="list"] {
@@ -112,13 +121,6 @@ ul[role="list"] {
 /* 1em = 16px */
 @media (width >= 80em) {
   :root {
-    --fs-lg: 2rem;
-    --fs-xl: 3rem;
-    --fs-2xl: 4rem;
-
-    --py-base: 1.5rem;
-    --py-lg: 2.5rem;
-    --py-xl: 5rem;
-    --px-lg: 2rem;
+    --pd-base: 2rem;
   }
 }
