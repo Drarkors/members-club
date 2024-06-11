@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   target: "web",
   mode: "development",
-  entry: "./src/index.js",
+  entry: "./src/main.js",
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
@@ -37,19 +37,20 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
     ],
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, "index.html"),
-        favicon: path.resolve(__dirname, "src", "assets", "logo.svg"),
-      }),
-      new CopyWebpackPlugin({
-        patterns: [
-          {
-            from: path.resolve(__dirname, "src", "assets"),
-            to: path.resolve(__dirname, "dist", "src", "assets"),
-          },
-        ],
-      }),
-    ],
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "index.html"),
+      favicon: path.resolve(__dirname, "src", "assets", "logo.svg"),
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, "src", "assets"),
+          to: path.resolve(__dirname, "dist", "src", "assets"),
+        },
+      ],
+    }),
+  ],
 };
