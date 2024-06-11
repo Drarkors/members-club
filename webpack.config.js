@@ -42,7 +42,7 @@ module.exports = {
         template: path.resolve(__dirname, "index.html"),
         favicon: path.resolve(__dirname, "src", "assets", "logo.svg"),
       }),
-      new CopyPlugin({
+      new CopyWebpackPlugin({
         patterns: [
           {
             from: path.resolve(__dirname, "src", "assets"),
