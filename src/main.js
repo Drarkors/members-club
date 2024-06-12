@@ -10,6 +10,8 @@ import "./styles/button.css";
 import "./styles/header.css";
 import "./styles/main.css";
 import "./styles/client-card.css";
-import "./styles/member-card.css";
+import "./styles/fidelity-card.css";
+import "./styles/fidelity-progress.css";
+import "./styles/history.css";
 
 // JS

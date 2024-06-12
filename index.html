@@ -39,12 +39,97 @@
     <main>
       <section id="client-card">
         <div class="avatar-container">
-          <div alt="Nome usuário" class="avatar"></div>
+          <div alt="Nome usuário" class="avatar" id="avatar"></div>
         </div>
         <div class="client-info">
-          <h2>Rafael Zanetti</h2>
-          <span>Cliente desde: 20/12/2020</span>
+          <h2 id="client-name">Rafael Zanetti</h2>
+          <span id="client-since">Cliente desde: 20/12/2020</span>
         </div>
+      </section>
+      <section id="fidelity-card">
+        <div class="fidelity-info">
+          <div>
+            <h4>Cartão fidelidade</h4>
+            <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
+          </div>
+          <div>
+            <span id="client-id">ID: 132-333-222-111</span>
+          </div>
+        </div>
+        <ul class="fidelity-tracker" role="list">
+          <li>
+            <!-- <img src="./src/assets/pin-check.png" alt="Icone de check" /> -->
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li>
+            <img src="./src/assets/pin-gift-mark.svg" alt="" />
+          </li>
+        </ul>
+      </section>
+      <section id="fidelity-progress">
+        <div>
+          <span><strong>3</strong> cortes restantes</span>
+          <div class="progress-container">
+            <div id="progress">
+              <div id="progress-indicator"></div>
+            </div>
+            <label for="progress">7 de 10</label>
+          </div>
+        </div>
+        <div class="img-container">
+          <img src="./src/assets/pin-gift.svg" alt="Icone de prêmio" />
+        </div>
+      </section>
+      <section class="history">
+        <div class="history-header">
+          <h4>Histórico</h4>
+          <span>7 cortes</span>
+        </div>
+        <ul class="history-list" role="list">
+          <li>
+            <div>
+              <h4>29/04/2024</h4>
+              <span>18:30</span>
+            </div>
+            <div>
+              <img src="./src/assets/check.png" alt="Icone de check" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>29/04/2024</h4>
+              <span>18:30</span>
+            </div>
+            <div>
+              <img src="./src/assets/check.png" alt="Icone de check" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>29/04/2024</h4>
+              <span>18:30</span>
+            </div>
+            <div>
+              <img src="./src/assets/check.png" alt="Icone de check" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <h4>29/04/2024</h4>
+              <span>18:30</span>
+            </div>
+            <div>
+              <img src="./src/assets/check.png" alt="Icone de check" />
+            </div>
+          </li>
+        </ul>
       </section>
     </main>
 

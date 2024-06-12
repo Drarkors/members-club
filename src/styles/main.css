@@ -4,6 +4,8 @@ main {
   gap: 1rem;
 
   padding: 1rem;
+
+  overflow-y: auto;
 }
 
 main > section {
@@ -17,4 +19,3 @@ main > section {
 
   background-color: var(--gray-100);
 }
-
