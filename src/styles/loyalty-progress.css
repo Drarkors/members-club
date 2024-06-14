@@ -1,4 +1,4 @@
-#fidelity-progress {
+#loyalty-progress {
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
@@ -55,26 +55,26 @@
     overflow: hidden;
 
     z-index: 1;
-
-    &::after {
-      content: "";
-
-      width: 0;
-      height: 100%;
-
-      position: absolute;
-
-      background: linear-gradient(
-        90deg,
-        #2daa6e 0%,
-        #2daaaa 33.33%,
-        #856ccf 66.67%,
-        #d658b3 100%
-      );
-    }
   }
 
   label {
     font-size: var(--fs-xs);
   }
+}
+
+#progress-indicator {
+  position: absolute;
+
+  width: 0;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #2daa6e 0%,
+    #2daaaa 33.33%,
+    #856ccf 66.67%,
+    #d658b3 100%
+  );
+
+  transition: width 0.5s;
 }

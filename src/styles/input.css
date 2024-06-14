@@ -34,3 +34,28 @@
 .input input:not(:blank) .input > button {
   background-color: var(--gray-700);
 }
+
+.input-error {
+  border-color: red;
+}
+
+.input-error:focus-within {
+  border-color: red;
+}
+
+.error-descr {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  margin-left: 0.25rem;
+  margin-top: 0.25rem;
+
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xs);
+  color: red;
+
+  & i {
+    font-size: var(--fs-base);
+  }
+}

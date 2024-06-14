@@ -1,4 +1,4 @@
-#client-card {
+#profile {
   gap: 1rem;
 
   align-items: center;
@@ -18,13 +18,13 @@
   overflow: hidden;
 }
 
-#client-card .avatar {
+#profile .avatar {
   flex: 1;
 
   border-radius: 0.625rem;
   border: 2px solid var(--white);
 
-  background-image: url(https://avatars.githubusercontent.com/u/19919319?v=4);
+  /* background-image: url(https://avatars.githubusercontent.com/u/19919319?v=4); */
   background-size: cover;
 }
 

@@ -27,17 +27,21 @@
             type="text"
             placeholder="ID do cartão"
             id="id-card"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            maxlength="15"
             autocomplete="off"
+            required
           />
           <button class="button" type="submit" title="Confirmar">
             <i class="ph ph-arrow-elbow-down-left"></i>
           </button>
         </div>
+        <label for="id-card" class="error-descr"> </label>
       </form>
     </header>
 
-    <main>
-      <section id="client-card">
+    <main style="display: none">
+      <section id="profile">
         <div class="avatar-container">
           <div alt="Nome usuário" class="avatar" id="avatar"></div>
         </div>
@@ -46,8 +50,8 @@
           <span id="client-since">Cliente desde: 20/12/2020</span>
         </div>
       </section>
-      <section id="fidelity-card">
-        <div class="fidelity-info">
+      <section id="loyalty-card">
+        <div class="loyalty-info">
           <div>
             <h4>Cartão fidelidade</h4>
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
@@ -56,26 +60,21 @@
             <span id="client-id">ID: 132-333-222-111</span>
           </div>
         </div>
-        <ul class="fidelity-tracker" role="list">
-          <li>
-            <!-- <img src="./src/assets/pin-check.png" alt="Icone de check" /> -->
+        <ul class="loyalty-tracker" role="list">
+          <!-- <li>
+            <img src="./src/assets/pin-check.png" alt="Icone de check" />
           </li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li>
+          <li></li> -->
+          <!-- <li>
             <img src="./src/assets/pin-gift-mark.svg" alt="" />
-          </li>
+          </li> -->
         </ul>
       </section>
-      <section id="fidelity-progress">
+      <section id="loyalty-progress">
         <div>
-          <span><strong>3</strong> cortes restantes</span>
+          <span id="remaining-progress"
+            ><strong>3</strong> cortes restantes</span
+          >
           <div class="progress-container">
             <div id="progress">
               <div id="progress-indicator"></div>
@@ -88,57 +87,9 @@
         </div>
       </section>
       <section class="history">
-        <div class="history-header">
-          <h4>Histórico</h4>
-          <span>7 cortes</span>
-        </div>
-        <ul class="history-list" role="list">
-          <li>
-            <div>
-              <h4>29/04/2024</h4>
-              <span>18:30</span>
-            </div>
-            <div>
-              <img src="./src/assets/check.png" alt="Icone de check" />
-            </div>
-          </li>
-          <li>
-            <div>
-              <h4>29/04/2024</h4>
-              <span>18:30</span>
-            </div>
-            <div>
-              <img src="./src/assets/check.png" alt="Icone de check" />
-            </div>
-          </li>
-          <li>
-            <div>
-              <h4>29/04/2024</h4>
-              <span>18:30</span>
-            </div>
-            <div>
-              <img src="./src/assets/check.png" alt="Icone de check" />
-            </div>
-          </li>
-          <li>
-            <div>
-              <h4>29/04/2024</h4>
-              <span>18:30</span>
-            </div>
-            <div>
-              <img src="./src/assets/check.png" alt="Icone de check" />
-            </div>
-          </li>
-        </ul>
+        <div class="history-summary"></div>
+        <ul class="history-list" role="list"></ul>
       </section>
     </main>
-
-    <!-- Input example -->
-    <!-- <div class="input">
-      <input type="text" placeholder="Placeholder for input" />
-      <button class="button">
-        <i class="ph ph-arrow-elbow-down-left"></i>
-      </button>
-    </div> -->
   </body>
 </html>

@@ -9,9 +9,11 @@ import "./styles/input.css";
 import "./styles/button.css";
 import "./styles/header.css";
 import "./styles/main.css";
-import "./styles/client-card.css";
-import "./styles/fidelity-card.css";
-import "./styles/fidelity-progress.css";
+import "./styles/profile.css";
+import "./styles/loyalty-card.css";
+import "./styles/loyalty-progress.css";
 import "./styles/history.css";
 
 // JS
+import "./modules/form/input.js";
+import "./modules/form/submit.js";
