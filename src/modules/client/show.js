@@ -6,7 +6,7 @@ import { showProgress } from "./progress.js";
 const main = document.querySelector("main");
 
 export function loadClient({ client }) {
-  main.style.display = "flex";
+  main.style.display = "";
 
   // Show client profile
   showProfile({ ...client });
